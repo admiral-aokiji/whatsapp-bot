@@ -1,3 +1,5 @@
+import os
+
 def portalLogin(mail, pwd):
     driver.get("https://www.placement.iitbhu.ac.in/accounts/login/?next=/students/")
     driver.find_element_by_id("id_login").send_keys(mail)
@@ -32,3 +34,31 @@ def getWillingness():
     #             text = 'I could not retrieve the results at this time, sorry.'
     msg.body(text)
     responded = True
+
+def shortWillingness():
+    getWillingness()
+    # shortenWillingness()
+
+def checkTPC(imsg):
+    if imsg == 'TPC':
+        text = 'Menu of options for TPC command'
+        msg.body(text)
+        responded = True
+    else:
+        portalLogin(os.environ.get('TPC_EMAIL'),os.environ.get('TPC_PWD'))
+
+
+    imsg = imsg[4:]
+    tpc_dispatch = {
+        '-willingness -short': shortWillingness,
+        '-w -s': shortWillingness,
+        # '-willingness -details': longWillingness,
+        # '-w -d': longWillingness,
+    }
+    if imsg[:15] == '-experience' or (imsg[:7] == 'TPC - e ' and len(imsg) > 8):
+        companyName = imsg.split(' ')[2]
+        print(companyName)
+        # getInterviewExperience(companyName)
+    else:
+        # send custom error msg for TPC commands
+        pass

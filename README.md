@@ -78,3 +78,5 @@ Admin add_article [number]  | Add an article                        |
 5. Helpful Articles Link sharing
 6. Custom articles saving
 7. Send amazing sticker 
+8. Test and willingness reminders
+9. 'Remind me in X' reminder
