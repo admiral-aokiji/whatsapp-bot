@@ -13,9 +13,11 @@ app = Flask(__name__)
 
 
 def getMenu():
+    #-- Refine
     return f'Hello\n Main menu: \n *TPC*- TPC portal willingness \n *Puzzle*- Solves puzzles from GFG '
 
 def getCreator():
+    #-- Refine
     return f'For any suggestions or requests, contact using 👇 \n 📞 : 9537701631 \n ✉ : rohit.saxena.met17@itbhu.ac.in'
 
 @app.route("/")

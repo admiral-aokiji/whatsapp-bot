@@ -9,56 +9,69 @@ def portalLogin(mail, pwd):
 def getWillingness():
     result = []
     # -- If filters/search terms are to be passed then add params. 
-    res = []
     for num in range(1,5):
         driver.get("https://www.placement.iitbhu.ac.in/company/opportunities?page="+ str(num))
         # -- modify link if filters and/or search keywords are passed
         companies = driver.find_elements_by_class_name("company")
-        for z in companies:
-            x = {}
-            x['name'] =z.find_element_by_class_name("company_name").text
-            x['profile'] =z.find_element_by_class_name("company_profile").text
-            x['deadline'] =z.find_element_by_class_name("willingness_dead").text[23:]
-            x['status'] =z.find_element_by_class_name("status").text[9:]
-            x['exam_date'] = z.find_element_by_class_name("exam_date").text
-            x['idd_package'] = z.find_elements_by_tag_name("td")[-2].text
-            res.append(x)
-    result = companyData(3)
-
-    text = ''
-    for company in result:
-        for (stat,value) in company.items():
-            text += '*' + stat + '* : ' + value + '\n'
-    print(text)
-    #         else:
-    #             text = 'I could not retrieve the results at this time, sorry.'
-    msg.body(text)
-    responded = True
+        for c in companies:
+            company = {}
+            # -- Add try except
+            company['name'] = c.find_element_by_class_name("company_name").text
+            company['profile'] =c.find_element_by_class_name("company_profile").text
+            company['deadline'] =c.find_element_by_class_name("willingness_dead").text[23:]
+            company['status'] = c.find_element_by_class_name("status").text[9:]
+            company['exam_date'] = c.find_element_by_class_name("exam_date").text
+            company['idd_package'] = c.find_elements_by_tag_name("td")[-2].text
+            result.append(company)
+    return result
 
 def shortWillingness():
-    getWillingness()
-    # shortenWillingness()
+    input = getWillingness()
+    # -- Add try except
+    final_txt = str()
+    for company in input:
+        for (stat, value) in company.items():
+            if stat not in ['status', 'exam_date', 'idd_package']:
+                final_txt += '*' + stat + '* : ' + value + '\n'
+    print(final_txt)
+    return final_txt
+
+def longWillingness():
+    input = getWillingness()
+    # -- Add try except
+    final_txt = str()
+    for company in input:
+        for (stat, value) in company.items():
+            final_txt += '*' + stat + '* : ' + value + '\n'
+    print(final_txt)
+    return final_txt
+
+def getInterviewExperience(companyName):
+    # ! fetch experiences from DB
+    pass
 
 def checkTPC(imsg):
-    if imsg == 'TPC':
-        text = 'Menu of options for TPC command'
-        msg.body(text)
-        responded = True
-    else:
-        portalLogin(os.environ.get('TPC_EMAIL'),os.environ.get('TPC_PWD'))
+    if imsg == 'tpc':
+        return 'Menu of options for TPC command'
+    
+    # ! Retrieve email ID and pwd from DB if feature implemented 
+    portalLogin(os.environ.get('TPC_EMAIL'),os.environ.get('TPC_PWD'))
+    imsg = imsg[4:] # to skip the 'tpc ' part of the msg
 
-
-    imsg = imsg[4:]
+    # ! Restructure this part and add try except
     tpc_dispatch = {
         '-willingness -short': shortWillingness,
         '-w -s': shortWillingness,
-        # '-willingness -details': longWillingness,
-        # '-w -d': longWillingness,
+        '-willingness -details': longWillingness,
+        '-w -d': longWillingness,
+        # ! Both functions and options can be merged
     }
-    if imsg[:15] == '-experience' or (imsg[:7] == 'TPC - e ' and len(imsg) > 8):
+    if imsg[:15] == '-experience' or (imsg[4:7] == '-e ' and len(imsg) > 8):
         companyName = imsg.split(' ')[2]
         print(companyName)
-        # getInterviewExperience(companyName)
-    else:
-        # send custom error msg for TPC commands
-        pass
+        getInterviewExperience(companyName)
+        # ? How to send company name for interview experiences with dispatch as other functions not taking input
+    
+    tpc_dispatch[imsg]()
+    #! If all options fail, then return via this return statement. Edit it as well to show menu of options
+    return 'I could not retrieve the results at this time, sorry.'
