@@ -32,6 +32,7 @@ def bot():
         if incoming_msg == 'TPC':
             text = 'Menu of options for TPC command'
             msg.body(text)
+            h = 7
             responded = True
          
         utils.portalLogin(os.environ.get('TPC_EMAIL'),os.environ.get('TPC_PWD'))

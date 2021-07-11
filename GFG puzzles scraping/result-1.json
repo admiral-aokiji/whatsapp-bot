@@ -1,0 +1,266 @@
+[
+    {
+        "id": 1,
+        "name": "How to Measure 45 minutes using two identical wires?",
+        "question": "How do we measure forty-five minutes using two identical wires, each of which takes an hour to burn? We have matchsticks with us. The wires burn non-uniformly. So, for example, the two halves of wire might burn in 10 minutes and 50 minutes respectively",
+        "answer": "Source: https://www.geeksforgeeks.org/puzzle-1-how-to-measure-45-minutes-using-two-identical-wires/"
+    },
+    {
+        "id": 2,
+        "name": "Finding ages of daughters",
+        "question": "Alok has three daughters. His friend Shyam wants to know the ages of his daughters. Alok gives him first hint. 1) The product of their ages is 72. Shyam says this is not enough information Alok gives him a second hint. 2) The sum of their ages is equal to my house number. Shyam goes out and look at the house number and tells \"I still do not have enough information to determine the ages\". Alok admits that Shyam can not guess and gives him the third hint 3) The oldest of the girls likes strawberry ice-cream. Shyam is able to guess after the third hint. Can you guess what are the ages of three daughters? ",
+        "answer": "Answer: The ages must be 3, 3 and 8. \nSource: https://www.geeksforgeeks.org/puzzle-2-find-ages-of-daughters/"
+    },
+    {
+        "id": 3,
+        "name": "Calculate total distance travelled by bee",
+        "question": "Two trains are on same track and they are coming toward each other. The speed of the first train is 50 km/h and the speed of the second train is 70 km/h. A bee starts flying between the trains when the distance between two trains is 100 km. The bee first flies from first train to second train. Once it reaches the second train, it immediately flies back to the first train \u2026 and so on until trains collide. Calculate the total distance travelled by the bee. Speed of bee is 80 km/h.",
+        "answer": "Answer: 66.67 km approx. \nSource: https://www.geeksforgeeks.org/puzzle-3-calculate-total-distance-travelled-by-bee/"
+    },
+    {
+        "id": 4,
+        "name": "Pay an employee using a gold rod of 7 units ?",
+        "question": "An employee works for an employer for 7 days. The employer has a gold rod of 7 units. How does the employer pay to the employee, so that the number of employee's rod units increases by one at the end of each day? The employer can make at most 2 cuts in the rod. ",
+        "answer": "Solution: The employer can pay for seven days by making 2 cuts in a way that he has 3 rods of size 1, 2 and 4. \n1st Day: Employer gives 1 unit cut. \n2nd day: Takes back 1 unit cut from employee given on the first day and gives 2 unit cut. \n3rd Day: Gives 1 unit and then the employer is left with 4 unit rod lengths. \n4th Day: Takes back cuts of 1 and 2 units. Gives the cut of 4 units. \n5th Day: Gives cut of 1 unit to the employee. \n6th Day: Takes back cut of 1 unit and gives a cut of 2 units. \n7th Day: Gives cut of 1 unit to the employee. \nSource: https://www.geeksforgeeks.org/puzzle-4-pay-an-employee-using-a-gold-rod-of-7-units/"
+    },
+    {
+        "id": 5,
+        "name": "Finding the Injection for Anesthesia",
+        "question": "In a Medical Laboratory, you have 240 Injections, one of which is for Anesthesia for a rat. If Anesthesia injection is injected in a rat, it will faint in exactly 24 hours. You have 5 rats available to determine which one injection contains the Anesthesia. How do you achieve this in 48 hours ? ",
+        "answer": "Solution: Let us number the each injection with unique 5 digit numbers consisting of only 0, 1 and 2. Let us number the Rats as 1, 10, 100, 1000, 10000. The action corresponding to the digit in the unit place will be executed by rat numbered 1. The action corresponding to the digit in the tenth place will be executed by rat numbered 10. The action corresponding to the digit in the 100th place will be executed by rat numbered 100. The action corresponding to the digit in the 1000th place will be executed by rat numbered 1000. The action corresponding to the digit in the 10000th place will be executed by rat numbered 10000. Number 0 on an Injection represents that the injection will not be injected to rat. \nNumber 1 on an Injection represents that the injection will be injected to rat on 1st day. \nNumber 2 on an Injection represents that the injection will be injected to rat on 2nd day (after 24 hours). Example: Let us say the Injection is numbered 11201. The Injections is injected on the first day to rat numbered 10000, 1000 and 1. It is injected on the second day to rat numbered 100. And it is not injected to rat numbered 10. So if the rats numbered 10000, 1000 and 1 faint within first 24 hours, rat numbered 100 faints in the next 24 hours and the rat numbered 10 does not faint, then the Anesthesia Injection has to be 11201. Total number of injections that can be tested in this way will be:3*3*3*3*3 = 243. So, with the help of 5 rats and within 48 hours we will be able to find a Anesthesia Injection among 240 Injections. Additional Note from Bot creators: The 3 cases where the injection number will be 11111, 00000 or 22222 are ignored as they can be deduced easily without using injections. The language of this puzzle has also been changed: rats from slaves, Anesthesia injection from poison, faint from death, etc. \nSource: https://www.geeksforgeeks.org/puzzle-5-finding-the-poisoned-wine/"
+    },
+    {
+        "id": 6,
+        "name": "Monty Hall problem",
+        "question": "Suppose you're on a game show, and you're given the choice of three doors: Behind one door is a car; behind the others, goats. You pick a door, say No. 1, and the host, who knows what's behind the doors, opens another door, say No. 3, which has a goat. He then says to you, \u201cDo you want to pick door No. 2?\u201d Is it to your advantage to switch your choice?\n ",
+        "answer": "Solution: If you switch, you get the car with probability 2/3. So switching is always a good choice. \nSource: https://www.geeksforgeeks.org/puzzle-6-monty-hall-problem/"
+    },
+    {
+        "id": 7,
+        "name": "3 Bulbs and 3 Switches",
+        "question": "There is a room with a door (closed) and three light bulbs. Outside the room, there are three switches, connected to the bulbs. You may manipulate the switches as you wish, but once you open the door you can't change them. Identify each switch with its bulb. All bulbs are in working condition.",
+        "answer": "Answer: Let the bulbs be X, Y, and Z \nTurn on switch X for 5 to 10 minutes. Turn it off and turn on switch Y. Open the door and touch the light bulb. \n1. if the light is on, it is Y \n2. if the light is off and hot, it is X \n3. if the light is off and cold, it is Z. \nSource: https://www.geeksforgeeks.org/puzzle-7-3-bulbs-and-3-switches/"
+    },
+    {
+        "id": 8,
+        "name": "Find the Jar with contaminated pills",
+        "question": "Puzzle: You have 5 jars of pills. Each pill weighs 10 grams, except for contaminated pills contained in one jar, where each pill weighs 9 grams. Given a scale, how could you tell which jar had the contaminated pills in just one measurement?",
+        "answer": "Source: https://www.geeksforgeeks.org/puzzle-7-find-the-jar-with-contaminated-pills/"
+    },
+    {
+        "id": 9,
+        "name": "Find the fastest 3 horses",
+        "question": "There are 25 horses among which you need to find out the fastest 3 horses. You can conduct race among at most 5 to find out their relative speed. At no point you can find out the actual speed of the horse in a race. Find out how many races are required to get the top 3 horses. ",
+        "answer": "Solution: 7. \nSource: https://www.geeksforgeeks.org/puzzle-9-find-the-fastest-3-horses/"
+    },
+    {
+        "id": 10,
+        "name": "A Man with Medical Condition and 2 Pills",
+        "question": "A man has a medical condition that requires him to take two kinds of pills, call them A and B. The man must take exactly one A pill and exactly one B pill each day, or he will die. The pills are taken by first dissolving them in water. The man has a jar of A pills and a jar of B pills. One day, as he is about to take his pills, he takes out one A pill from the A jar and puts it in a glass of water. Then he accidentally takes out two B pills from the B jar and puts them in the water. Now, he is in the situation of having a glass of water with three dissolved pills, one A pill and two B pills. Unfortunately, the pills are very expensive, so the thought of throwing out the water with the 3 pills and starting over is out of the question. How should the man proceed in order to get the right quantity of A and B while not wasting any pills?",
+        "answer": "Source: https://www.geeksforgeeks.org/puzzle-10-a-man-with-medical-condition-and-2-pills/"
+    },
+    {
+        "id": 11,
+        "name": "1000 Coins and 10 Bags",
+        "question": "A dealer has 1000 coins and 10 bags. He has to divide the coins over the ten bags so that he can make any number of coins simply by handing over a few bags. How must he divide his money into the ten bags? ",
+        "answer": "Solution: The idea of filling coins in the powers of 2 can be get from the condition that was given the question that each bag can be given or not given, that is we are not allowed to open the bag and give some coins. So we can represent each bag as each place value which takes either the value of 0 or 1. For example if we have to give 7 coins then it is nothing but 0000000111 the last 3 digits of 1 represents that those 3 bags whose place values are 1,2,4 are to be given to give 7 coins. Remember that each bag should be either given or not given that means there are only 2 choices to us, which has similarity with the numbers in base 2 where each digit has only 2 values either 1 or 0.\nWe can fill coins in the 10 bags in increasing order of 2^n where n varies from 0-8, filling the last bag with all remaining coins as follows: 1 = 2^0 = 1 2 = 2^1 = 2 3 = 2^2 = 4 4 = 2^3 = 8 5 = 2^4 = 16 6 = 2^5 = 32 7 = 2^6 = 64 8 = 2^7 = 128 9 = 2^8 = 256 10 = remaining coins = 489 Now, the dealer can make any number of coins just by handing over the bags. As, \nnumber 0f coins needed = some bag 1 + some bag 2 + .... + some bag n \nexample: \n519 coins = bag 2 + bag 4 + bag 8 + bag 16 + bag 489. \nSource: https://www.geeksforgeeks.org/puzzle-11-1000-coins-and-10-bags/"
+    },
+    {
+        "id": 12,
+        "name": "Maximize probability of White Ball",
+        "question": "There are two empty bowls in a room. You have 50 white balls and 50 black balls. After you place the balls in the bowls, a random ball will be picked from a random bowl. Distribute the balls (all of them) into the bowls to maximize the chance of picking a white ball.",
+        "answer": "Solution: First, let us assume that we divided the balls into jars equally so each jar will contain 50 balls.\nSo the probability of selecting a white ball will be=probability of selecting the first jar*probability of white ball in the first jar + probability of selecting the second jar*probability of white ball in the second jar\n=(1/2)*(0/50)+(1/2)*(50/50)=0.5\nSince we have to maximize the probability so we will increase the probability of white ball in the first jar and keep the second probability same mean equal to 1\nso we add 49 white balls with 50 black balls in the first jar and only one white ball in the second jar\nso the probability will be now= Therefore, probability of getting white ball becomes 1/2*1 + 1/2*49/99 which is approximately 3/4. (Sum of Infinite GP) \nSource: https://www.geeksforgeeks.org/puzzle-12-maximize-probability-of-white-ball/"
+    },
+    {
+        "id": 13,
+        "name": "100 Prisoners with Red/Black Hats",
+        "question": "100 prisoners in jail are standing in a queue facing in one direction. Each prisoner is wearing a hat of color either black or red. A prisoner can see hats of all prisoners in front of him in the queue, but cannot see his hat and hats of prisoners standing behind him. \nThe jailer is going to ask color of each prisoner's hat starting from the last prisoner in queue. If a prisoner tells the correct color, then is saved, otherwise executed. How many prisoners can be saved at most if they are allowed to discuss a strategy before the jailer starts asking colors of their hats. ",
+        "answer": "Answer: \nAt-most 99 prisoners can be saved and the 100th prisoner has 50-50 chances of being executed. \nThe idea is that every prisoner counts number of red hats in front of him. 100th prisoner says red if the number of red hats is even. He may or may not be saved, but he conveys enough information to save 99th prisoner. The 99th prisoner decides his answer on the basis of answer of 100th prisoner's answer. There are following possibilities and 99th prisoner can figure out color of his hat in every case: \n1) If 100th prisoner said 'Red' (even number of red hats in front of him) \na) If 99'th prisoner sees even number of red hats in front of him, then his color is black. \nb) If 99th prisoner sees odd number of red hats in front of him, then his color is red. \n2) If 100'th prisoner said 'Black' (odd number of red hats in front of him) \na) If 99th prisoner sees even number of red hats in front of him, then his color is Red. \nb) If 99th prisoner sees odd number of red hats in front of him, then his color is Black. The 98th prisoner decides his answer on the basis of answer of 99th prisoner's answer and uses same logic. Similarly other prisoners from 97 to 1 are saved. See the source for the strategy \nSource: https://www.geeksforgeeks.org/puzzle-13-100-prisoners-with-redblack-hats/"
+    },
+    {
+        "id": 14,
+        "name": "Strategy for a 2 Player Coin Game",
+        "question": "Puzzle: Consider a two-player coin game where each Player A and Player B gets the turn one by one. There is a row of even number of coins, and a player on his/her turn can pick a coin from any of the two corners of the row. The player that collects coins with more value wins the game. Develop a strategy for the player making the first turn i.e, Player A, such that he/she never loses the game. Note that the strategy to pick a maximum of two corners may not work. ",
+        "answer": "Solution:\nThe idea is to count the sum of values of all even coins and odd coins, compare the two values. The player that makes the first move can always make sure that the other player is never able to choose an even coin if the sum of even coins is higher. Similarly, he/she can make sure that the other player is never able to choose an odd coin if the sum of odd coins is higher. Example: Suppose you are given the following rows of coins: Coins at even places: 20, 30, 14\nCoins at odd places: 18, 15, 10\nThese places are fixed independent of whether the choice of selection must begin from the left or the right-hand side. Step 1: Sum of all even placed coins = 20 + 30 + 14 = 64\nStep 2: Sum of all odd placed coins = 18 + 15 + 10 = 43\nStep 3: Comparing the even and the odd placed coins where EVEN > ODD Therefore, Player A must start selecting from the right-hand side and choose all the even-placed coins every time(here they are 14, 30 and 20). So first picker, Player A picks 14. Now, irrespective of whether the second Player B starts selecting from the left-hand side i.e., 18 or from the right-hand side i.e., 20, the even placed coins i.e., 14, 30 and 20 are booked for the Player A. Therefore, be any situation arise, the first picker Player A will always win the game. \nSource: https://www.geeksforgeeks.org/puzzle-14-strategy-for-a-2-player-coin-game/"
+    },
+    {
+        "id": 15,
+        "name": "Camel and Banana Puzzle",
+        "question": "A person has 3000 bananas and a camel. The person wants to transport the maximum number of bananas to a destination which is 1000 KMs away, using only the camel as a mode of transportation. The camel cannot carry more than 1000 bananas at a time and eats a banana every km it travels. What is the maximum number of bananas that can be transferred to the destination using only camel (no other mode of transportation is allowed). ",
+        "answer": "Answer: 833. \nSource: https://www.geeksforgeeks.org/puzzle-15-camel-and-banana-puzzle/"
+    },
+    {
+        "id": 16,
+        "name": "100 Doors",
+        "question": "There are 100 doors in a row, all doors are initially closed. A person walks through all doors multiple times and toggle (if open then close, if close then open) them in following way: In first walk, the person toggles every door In second walk, the person toggles every second door, i.e., 2nd, 4th, 6th, 8th, ... In third walk, the person toggles every third door, i.e. 3rd, 6th, 9th, ... ... In 100th walk, the person toggles 100th door. Which doors are open in the end? ",
+        "answer": "Solution: \nA door is toggled in ith walk if i divides door number. The door is switched back to an initial stage for every pair of divisors. For example, 45 is toggled 6 times for 3 pairs (5, 9), (15, 3) and (1, 45). \nIt looks like all doors would become closes at the end. But there are door numbers which would become open, for example, 16, the pair (4, 4) means only one walk. Similarly all other perfect squares like 4, 9, ... So the answer is 1, 4, 9, 16, 25, 36, 49, 64, 81 and 100. \nSource: https://www.geeksforgeeks.org/puzzle-16-100-doors/"
+    },
+    {
+        "id": 17,
+        "name": "Ratio of Boys and Girls in a Country where people want only boys",
+        "question": "In a country, all families want a boy. They keep having babies till a boy is born. What is the expected ratio of boys and girls in the country?",
+        "answer": "Solution: 50:50 \nSource: https://www.geeksforgeeks.org/puzzle-17-ratio-of-boys-and-girls-in-a-country-where-people-want-only-boys/"
+    },
+    {
+        "id": 18,
+        "name": "Torch and Bridge",
+        "question": "Puzzle: There are 4 persons (A, B, C and D) who want to cross a bridge in night. There is only one torch with them and the bridge cannot be crossed without the torch. There cannot be more than two persons on the bridge at any time, and when two people cross the bridge together, they must move at the slower person's pace. Can they all cross the bridge in 15 minutes? Speeds: A = , B = , C = , D = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxxx",
+        "answer": "Solution: Total time spent: 3 + 10 + 2 = 15 minutes. Source: https://www.geeksforgeeks.org/puzzle-18-torch-and-bridge/"
+    },
+    {
+        "id": 19,
+        "name": "Poison and Rat",
+        "question": "There are 1000 wine bottles. One of the bottles contains poisoned wine. A rat dies after one hour of drinking the poisoned wine. How many minimum rats are needed to figure out which bottle contains poison in hour.",
+        "answer": "Solution: 10 rats. The result is based on binary number system. Source: https://www.geeksforgeeks.org/puzzle-19-poison-and-rat/"
+    },
+    {
+        "id": 20,
+        "name": "5 Pirates and 100 Gold Coins",
+        "question": "There are 5 pirates, they must decide how to distribute 100 gold coins among them. The pirates have seniority levels, the senior-most is A, then B, then C, then D, and finally the junior-most is E. Rules of distribution (that every pirate follows) are: XXXXXXXXXXXXXXXXXXXXXXXXXXX ... What is the maximum number of coins that pirate A might get? ",
+        "answer": "Answer: 98. \nSource: https://www.geeksforgeeks.org/puzzle-20-5-pirates-and-100-gold-coins/"
+    },
+    {
+        "id": 21,
+        "name": "3 Ants and Triangle",
+        "question": "There are 3 ants sitting on three corners of a triangle. All ants randomly pick a direction and start moving along edge of the triangle. What is the probability that any two ants collide? Hint: Every ant has two choices (pick either of two edges going through the corner on which ant is initially sitting). ",
+        "answer": "Answer: Collision doesn't happen only in following two cases\n1) All ants move in counterclockwise direction. 2) All ants move in clockwise direction. Since every ant has two choices (pick either of two edges going through the corner on which ant is initially sitting), there are total 23 possibilities. Out of 23 possibilities, only 2 don't cause collision. So, the probability of collision is 6/8 and the probability of non-collision is 2/8. \nSource: https://www.geeksforgeeks.org/puzzle-21-3-ants-and-triangle/"
+    },
+    {
+        "id": 22,
+        "name": "Maximum Chocolates",
+        "question": "You have 15 Rs with you. You go to a shop and shopkeeper tells you price as 1 Rs per chocolate. He also tells you that you can get a chocolate in return of 3 wrappers. How many maximum chocolates you can eat?",
+        "answer": "Answer: 22. Buy and eat 15 chocolates\nReturn 15 wrappers and get 5 more chocolates.\nReturn 3 wrappers, get 1 chocolate and eat it (keep 2 wrappers)\nNow we have 3 wrappers. Return 3 and get 1 more chocolate. So total chocolates = 15 + 5 + 1 + 1  = 22 \nSource: https://www.geeksforgeeks.org/puzzle-22-maximum-chocolates/"
+    },
+    {
+        "id": 23,
+        "name": "Days of month using 2 dice",
+        "question": "Puzzle: How can you represent days of month using two 6 sided dice? You can write one number on each face of the dice from 0 to 9 and you have to represent days from 1 to 31, for example for 1, one dice should show 0 and another should show 1, similarly for 29 one dice should show 2 and another should show 9.",
+        "answer": "Answer: Dice 1: 0 1 2 3 5 7\nDice 2: 0 1 2 4 6 8 \nExplanation: You have to show 11, 22 so 1 and 2 should be present in both dices, similarly to show 01, 09. 0 should be present in both dices, now the trick is for showing 9 you can use dice with 6 printed on one of the faces. \nSource: https://www.geeksforgeeks.org/puzzle-23-days-of-month-using-2-dice/"
+    },
+    {
+        "id": 24,
+        "name": "10 Coins Puzzle",
+        "question": "You are blindfolded and 10 coins are place in front of you on table. You are allowed to touch the coins, but can't tell which way up they are by feel. You are told that there are 5 coins head up, and 5 coins tails up but not which ones are which. Can you make two piles of coins each with the same number of heads up? You can flip the coins any number of times.",
+        "answer": " Source: https://www.geeksforgeeks.org/puzzle-24-10-coins-puzzle/"
+    },
+    {
+        "id": 25,
+        "name": "Chessboard and dominos",
+        "question": "There is an 8 by 8 chessboard in which two diagonally opposite corners have been cut off.You are given 31 dominos, and a single domino can cover exactly two squares. Can you use the 31 dominos to cover the entire board?",
+        "answer": "Answer:No. At first it seems that there were 8*8 = 64 squares, then 2 have been cut off. So, Squares remaining= 64-2 = 62\nAnd there are 31 dominos, so they will cover the remaining chessboard coz = 31*2 = 62 But this is not the answer: Lets visualize it: Each domino we set on the chessboard will always take 1 Black and 1 White square.Therefore, 31 dominos will take 31 white square and 31 black squares exactly. On this chessbord however, we must have 32 black and 30 white squares. Hence it is not possible to do so. \nSource: https://www.geeksforgeeks.org/puzzle-25chessboard-and-dominos/"
+    },
+    {
+        "id": 26,
+        "name": "Know Average Salary without Disclosing Individual Salaries",
+        "question": "Three Employees want to know the average of their salaries. They are not allowed to share their individual salaries.",
+        "answer": "Answer:\n1) X adds a Random Number and his salary and tells the sum to Y. 2) Y also adds a Random Number and his salary to the sum told by X and tells new sum to Z. 3) Z also adds a Random Number and his salary to the sum told by Y and tells new sum to X. 4) X subtracts its random number from the sum told by Z and tells the new number to Y. 5) Y subtracts its random number from the sum told by X and tells the new number to Z. 6) Z subtracts its random number from the sum told by Y and announces the new number. The new number is now the sum of three salaries and average can be calculated by dividing the sum by 3. Finally, nobody knows the salary of others, but all know average. This can be extended to more than 3 employees also. \nSource: https://www.geeksforgeeks.org/puzzle-26-know-average-salary-without-disclosing-individual-salaries/"
+    },
+    {
+        "id": 27,
+        "name": "Hourglasses Puzzle",
+        "question": "Puzzle: Given two hourglass of 4 minutes and 7 minutes, how will yous measure 9 minutes.",
+        "answer": "Source: https://www.geeksforgeeks.org/puzzle-27-hourglasses-puzzle/"
+    },
+    {
+        "id": 28,
+        "name": "Newspaper Puzzle",
+        "question": "Question: A newspaper made of 16 large sheets of paper folded in half. The newspaper has 64 pages altogether. The first sheet contains pages 1, 2, 63, 64. If we pick up a sheet containing page number 45. What are the other pages that this sheet contains?",
+        "answer": "Answer: On the back of 45, it is 46. The pages are such that for each page p, 65-p will be also on the same page. Then,65-45 = 20 and 65-46 = 19 \nSource: https://www.geeksforgeeks.org/puzzle-28-newspaper-puzzle/"
+    },
+    {
+        "id": 29,
+        "name": "Car Wheel Puzzle",
+        "question": "A car has 4 tyres and 1 spare tyre. Each tyre can travel a maximum distance of 20000 miles before wearing off. What is the maximum distance the car can travel before you are forced to buy a new tyre? You are allowed to change tyres (using the spare tyre) an unlimited number of times. \n ",
+        "answer": "Answer: 25000 kms\nSolution: Divide the lifetime of the spare tire into 4 equal part i.e., 5000 and swap it at each completion of 5000 miles distance. \nLet four tyres be named as A, B, C and D and spare tyre be S. All tyres are used to their full strength. \nCreators' message: Do read the source article as it has explained solving these types of puzzles in a very conscise way. \nSource: https://www.geeksforgeeks.org/puzzle-29-car-wheel-puzzle/"
+    },
+    {
+        "id": 30,
+        "name": "Last Palindrome Date Before 10/02/2001",
+        "question": "In year 2001 on October 2, 2001, the date in MMDDYYYY format was a palindrome (same forwards as backwards), 10/02/2001 -> \"10022001\". When was the last palindrome date before 10/02/2001?",
+        "answer": "Answer: 08/31/1380.\nOne year can have only one palindrome as the year fixes the month and date too, so the year has to be less than 2001 since we already have the palindrome for 10/02. It can't be any year in 1900 because that would result in a day of 91, same for 1800 down to 1400. it could be a year in 1300 because that would be the 31st day. So what's the latest year in 1300 that would make a month?\nWhen you first look at it, 12th month comes to mind as we have to find the latest date, so it seems it would be 1321. But we have to keep in mind that we want the maximum year in 1300 century with a valid date, so lets think about 1390 that will give the date as 09/31, is this a valid date? No, because September has only 30 days, so last will be the 31st August. \nSource: https://www.geeksforgeeks.org/puzzle-30-last-palindrome-data/"
+    },
+    {
+        "id": 31,
+        "name": "Minimum cut Puzzle",
+        "question": "Puzzle: You have got someone working for you for five days and a gold bar to pay him. You must give them a piece of gold at the end of every day. What are the fewest number of cuts to the bar of gold that will allow you to pay him 1/5th each day? ",
+        "answer": "Answer: 2 cuts. [1 unit and two 2 units] [two 1 units and one 3 unit] \nSource: https://www.geeksforgeeks.org/puzzle-31-minimum-cut-puzzle/"
+    },
+    {
+        "id": 32,
+        "name": "Completion of Task",
+        "question": "A man is allocated a task. He doubles the task done everyday. If the man completely does the task in 18 days, how many days did it take for the man to complete 25% of the task? ",
+        "answer": "Answer: 16. 100% of task = 18 days As he doubles the task everyday. So, 50% of task = 17 days 25% of task = 16 days. Alternative Solution : Let the amount of work the man did on first day be x and total work to be done be S. As the amount of work he did on next day would be 2 times of it's previous day, we can write amount of work he did on 2nd day as '2x', 3rd day '4x', 4th day '8x' and so on... We can write it as a GP as follows : S = x+2x+4x+8x+.... (till 18th day) S = x*(218-1)/(2-1). According to ques we have to find the day when he would complete 25% of the total work. We can write the expression as S/4 = x+2x+4x+8x+...  (till nth day) S/4=x*(2n-1)/(2-1) S/4=x*(2n-1) Substituting value of S from equation (1) x*(218-1)/4=x*(2n-1) On simplifying 218-1=4*(2n-1) 218-1=2n*4-4 2n+2=218+3    (2n*4=2n*22=2n+2) We can neglect 3 in comparison of 218 2n+2=218 n+2=18 n=16 days So answer is 16 days. \nSource: https://www.geeksforgeeks.org/puzzle-32-completion-of-task/"
+    },
+    {
+        "id": 33,
+        "name": "Rs 500 Note Puzzle ",
+        "question": "A Lady (L) bought an item of Rs 100 from the Shopkeeper (C). She paid him through a 500 Rs Note. Realizing that he did not have change, the shopkeeper C got change for that note from another shopkeeper (S) and paid Rs 400 to the Lady. After a few days, S realized that the note is fake, And this railed at C and took 500 Rs back from him. So in this whole process how much money did C loose in the end?",
+        "answer": "Answer: 500 \nThe total loss for shopkeeper = 500 ( given back to the person who had provided the change ) Consider a transaction box, the lady came with a counterfeit 500 Rs note which can be considered of 0 value.\nNow the lady took the item (cost of the item 100 Rs ) and 400 Rs (the change given by shopkeeper(C) to the lady)\nfrom the transaction box, total of 500 Rs. Now the equivalent amount should be lost by someone, thus shopkeeper(C) lost 500 Rs. Another shopkeeper(S) gave 500 Rs and took back the same amount hence no loss for him.\nSource: https://www.geeksforgeeks.org/puzzle-33-rs-500-note-puzzle/"
+    },
+    {
+        "id": 34,
+        "name": "Prisoner and Policeman Puzzle",
+        "question": "Policeman decided to punish the Prisoner and asked him to make a statement. The Prisoner should make such a statement so that he would be alive.\nIf the statement is held true by Policeman, the Prisoner will be hanged to death and if the statement is held false, the Prisoner will be shot dead.",
+        "answer": "Answer: The Prisoner said, 'I will be shot dead'\nIf Policeman says the statement is true, the Prisoner will be hanged to death which will make his statement false.\nIf Policeman says the statement is false, the Prisoner will be shot dead which will make the statement true. \nSource: https://www.geeksforgeeks.org/puzzle-34-prisoner-and-policeman-puzzle/"
+    },
+    {
+        "id": 35,
+        "name": "2 Eggs and 100 Floors",
+        "question": "The following is a description of the instance of this famous puzzle involving 2 eggs and a building with 100 floors. Suppose that we wish to know which stories in a 100-story building are safe to drop eggs from, and which will cause the eggs to break on landing. What strategy should be used to drop eggs such that total number of drops in worst case is minimized and we find the required floor. Creators message: This is a splendid example of Dynamic Programming and so do try this first on your own and then read the solution from the source",
+        "answer": " If only one egg is available and we wish to be sure of obtaining the right result, the experiment can be carried out in only one way. Drop the egg from the first-floor window; if it survives, drop it from the second floor window. Continue upward until it breaks. In the worst case, this method may require 100 droppings.\nSuppose 2 eggs are available. What is the least number of egg-droppings that is guaranteed to work in all cases?\nThe problem is not actually to find the critical floor, but merely to decide floors from which eggs should be dropped so that total number of trials are minimized. If we use Binary Search Method to find the floor and we start from 50'th floor, then we end up doing 50 comparisons in worst case. The worst case happens when the required floor is 49'th floor. Optimized Method:\nThe idea is to do optimize the solution using below equation: The optimal number of trials is 14 in worst case. See below for programming solution for general k eggs and n floors.\nhttps://www.geeksforgeeks.org/dynamic-programming-set-11-egg-dropping-puzzle/\nSource: https://www.geeksforgeeks.org/puzzle-set-35-2-eggs-and-100-floors/"
+    },
+    {
+        "id": 36,
+        "name": "Matchstick Puzzle",
+        "question": "How to make 4 equilateral triangles with 6 identical match sticks? ",
+        "answer": "Answer: Make a tetrahedron. Method-III: Make one equilateral triangle by three sticks . then put each remaining stick on straight line passing through middle points of each two arms of triangle. \nCreators message: Read the article for the remaining 2 solutions\nSource: https://www.geeksforgeeks.org/puzzle-36-matchstick-puzzle/"
+    },
+    {
+        "id": 37,
+        "name": "Maximum run in cricket",
+        "question": "In a one day international cricket match, considering no extras(no wides, no no-balls, etc.) and no overthrows. What is the maximum number of runs that a batsman can score in an ideal case ?",
+        "answer": " Answer: 49*(6*5+3)+(6*6)= 1653. \nFrom Over 1 to 49: 1st ball:- 6 runs(hit six) 2nd ball:- 6 runs(hit six) 3rd ball:- 6 runs(hit six) 4th ball:- 6 runs(hit six) 5th ball:- 6 runs(hit six) 6th ball:- 3 runs(took 3 runs between the wickets and take back the strike) = >49*(6*5+3) 50th Over: Hit six sixes in a row. = >6*6 \nSource: https://www.geeksforgeeks.org/puzzle-37-maximum-run-in-cricket/"
+    },
+    {
+        "id": 38,
+        "name": "Tic Tac Toe Puzzle",
+        "question": "The game of Tic-Tac-Toe is being played between two players and it is in below state after six moves. Source: https://www.geeksforgeeks.org/puzzle-38-tic-tac-toe-puzzle/",
+        "answer": "\nSource: https://www.geeksforgeeks.org/puzzle-38-tic-tac-toe-puzzle/"
+    },
+    {
+        "id": 39,
+        "name": "100 coins puzzle",
+        "question": "This puzzle is similar to 10 Coins Puzzle (Puzzle 24). 100 coins are lying flat on a table. 10 of them are heads up and 90 are tails up.You can't see which one is which. How can we split the coins into two piles such that there are same number of heads up in each pile? Note: It is allowed to flip the coins of one pile once.",
+        "answer": "Answer: Make 2 piles with 10 coins and 90 coins each. Now, flip all the coins in the smaller pile. Pile one has 'h' no. of heads and 't' no. of tails while the other pile will have '10-h' heads and '90-t' tails.Now we can flip coins of one pile,so lets flip coins of any pile(say 2nd pile) then no. of heads and tails interchange. Now, number of heads are '90-t' and no. of tails are '10-h' and no. of heads in pile 1 = no. of heads in pile 2. Overall, h=90-t. Therefore,h+t=90 And no. of coins in pile 1 is 'h+t'. Creators message: Read the article as the text contains many grammatical errors.\nSource: https://www.geeksforgeeks.org/puzzle-39-hundred-coin-puzzle/"
+    },
+    {
+        "id": 40,
+        "name": "Find missing Row in Excel",
+        "question": "We are given an excel sheet which contains integers from 1 to 50, including both. However, the numbers are in a jumbled form and there is 1 integer missing. You have to write a code to identify the missing integer. Only the logic is required.",
+        "answer": "Solution: We know that the sum of all the numbers from 1 to n is (n*(n+1)/2)\nTherefore, sum of all the numbers from 1 to 50 is Therefore, all we need to do is to sum all the integers present in the file and subtract the sum from 1275. The difference between 1275 and this sum would give us the missing integer. \nSource: https://www.geeksforgeeks.org/puzzle-40-find-missing-row-in-excel/"
+    },
+    {
+        "id": 41,
+        "name": "Guess Color of Hat",
+        "question": "There are 20 people standing in a line, one behind the other. Each is made to wear a hat, which can either be white or black. There can be any number of white or black hats between 0 and 20. Each person can see the hat of all the persons ahead of him in the line, but not those of the people standing behind. Each person is required to guess (loudly) the color of his/her own hat. The objective is for the group to get as many correct guesses as possible. The group is allowed to discuss and form a strategy before the exercise. What is the best strategy? What is the maximum number of correct guesses in this strategy?",
+        "answer": "Solution:\nThe person who stands last in the queue, behind everyone else, will count the number of white hats on the heads of the 19 people present ahead of him. If this number is even, he (loudly) guesses the hat on his head as \u2018Black'. if the number is odd, he guesses \u2018White'. The probability of the hat on his head being what he guessed is 50%. There is no way this person can guess the hat on his head correctly. However, his guess functions as a message to others in front of him. Suppose the 20th person guesses \u2018Black'. Now, the person who is 19th in the queue knows that the number of white hats on the first 19 people (the 18 people in front of him and himself) is even. He then checks whether the number of white hats in front of him is even or odd. If the number is even, that means the hat on his head is black. If the number is odd, that means the hat on his head is white and calls that out (loudly). Therefore, the 19th person in the queue always guesses correctly, based on the message the 20th person passed on. A similar strategy is followed by each person in turn. Therefore, everyone except the last (20th) person guesses correctly for sure. \nSource: https://www.geeksforgeeks.org/puzzle-41-guess-color-of-hat/"
+    },
+    {
+        "id": 42,
+        "name": "Placing the numbers",
+        "question": "Source: https://www.geeksforgeeks.org/puzzle-42-placing-the-numbers/",
+        "answer": " \nSource: https://www.geeksforgeeks.org/puzzle-42-placing-the-numbers/"
+    },
+    {
+        "id": 43,
+        "name": "Muddy Heads",
+        "question": "A mother tells her two children, a boy and a girl, to play without getting dirty.\nHowever, while playing, both children get mud on their foreheads.\nThe mother says \"At least one of you has a muddy forehead\". She then asks the children to answer \"Yes\" or \"No\" to the question: \"Do you know whether you have a muddy forehead?\"\nThe mother asks this question twice.\nWhat will the children answer each time this question is asked, assuming that a child can see whether his/her sibling has a muddy forehead, but cannot see his or her own forehead? Assume that both children are honest and that the children answer each question simultaneously.",
+        "answer": "Solution: Let s be the statement that the son has a muddy forehead and let d be the statement that the daughter has a muddy forehead. When the mother says that at least one of the two children has a muddy forehead, she is stating that the disjunction (s U d) is true.\nBoth children will answer \"No\" the first time the question is asked because each sees mud on the other child's forehead. That is, the son knows that d is true, but does not know whether s is true, and the daughter knows that s is true, but does not know whether d is true.\nAfter the son has answered \"No\" to the first question, the daughter can determine that d must be true. This follows because when the first question is asked, the son knows that (s U d) is true, but cannot determine whether s is true. Using this information, the daughter can conclude that d must be true, for if d were false, the son could have reasoned that because (s U d) is true, then s must be true, and he would have answered \"Yes\" to the first question. The son can reason in a similar way to determine that s must be true. It follows that both children answer \"Yes\" the second time the question is asked. Source: https://www.geeksforgeeks.org/puzzle-43-muddy-heads/"
+    },
+    {
+        "id": 44,
+        "name": "Girl or Boy",
+        "question": "The Boy or Girl problem consists of a bunch of questions in probability which has kept the mathematicians on discussion about its possibilities.  But different from them, here is one puzzle for you with no ambiguity. Suppose that I have a friend whose name is Ankur. Ankur has his elder brother who got married 10 years before. But Ankur being a silly guy has the habit of forgetting things; you can say a \"Short time memory loss\". This summer he is going to meet his brother after 10 years, and he has planned to purchase some clothes for his brother's kids as a token of love. Each and every time he faces a problem he comes to me, so this time also, he came to seek help, and I have not left him empty handed. I told him that as far as I can recall, his brother has two offspring's and one of the boy was born on Tuesday. Now, it's your turn to help him.  What is the probability that Ankur's brother has two boys? Assume an equal chance of giving birth to either sex and an equal chance to giving birth on any day.",
+        "answer": "Solution: If you think the answer should be 1/2, you would be wrong. If you knew which child was a boy (say, the younger one), you would be closer to the truth.But since the boy could be either the younger or the older child, the analysis is more subtle. The answer would be 13/27. There can be four cases, i.e. either his brother has two boys, or one boy(elder) and one girl, one girl(elder) and one boy, or both of them are girls. And there are 7 equally likely possibilities for any one of the children of taking birth on Tuesday for all these four cases. Therefore, the total cases are 7*4- 1(as there is repetition of two boys two times). The possibility for having two boys with both of them taking birth on Tuesday will be 7*2- 1. Therefore, the answer would be 13/27. \nSource: https://www.geeksforgeeks.org/puzzle-44-girl-or-boy/"
+    }
+]
